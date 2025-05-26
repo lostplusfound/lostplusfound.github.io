@@ -6,7 +6,7 @@ date: 2025-5-26
 last_modified_at: 2025-05-26
 categories: [portfolio]
 tags: [flutter, ai, civic-tech, government, gemini, firebase]
-author_profile: false
+author_profile: true
 read_time: true
 related: true
 share: true
