@@ -2,17 +2,38 @@
 layout: page
 title: About
 permalink: /about/
+layout: single
+classes: wide
+author_profile: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+👋 Hi, I'm **Stephen** — a developer passionate about civic engagement, digital privacy, and tech for social good.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I believe in building technology that **empowers people**, and having fun and learning in the process.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+---
 
+### 🧰 What I Work With
 
-[jekyll-organization]: https://github.com/jekyll
+- 🐦 **Flutter** — for building beautiful, cross-platform experiences.
+- ⚙️ **C / C++** — for embedded systems and microcontroller projects (like Arduino).
+- ☕ **Java** — my go-to language thanks to its workhorse, reliable nature.
+
+---
+
+### 💡 Interests
+
+- Civic tech
+- Digital rights & online privacy
+- Open-source software
+- AI and machine learning
+
+---
+
+### 📬 Let’s Connect
+
+You can find my work on [GitHub](https://github.com/lostplusfound) or explore my [portfolio](/portfolio/).
+
+---
+
+Thanks for stopping by!
