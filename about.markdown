@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 layout: single
 classes: wide
-author_profile: true
+author_profile: false
 ---
 
 👋 Hi, I'm **Stephen** — a developer passionate about civic engagement, digital privacy, and tech for social good.
