@@ -4,8 +4,15 @@ excerpt: "An AI-powered civic engagement app that summarizes U.S. government act
 layout: single
 date: 2025-5-26
 last_modified_at: 2025-05-26
-categories: [portfolio]
-tags: [flutter, ai, civic-tech, government, gemini, firebase]
+categories: 
+  - portfolio
+tags: 
+  - flutter
+  - ai 
+  - civic-tech 
+  - government 
+  - gemini
+  - firebase
 author_profile: true
 read_time: true
 related: true

@@ -1,5 +1,5 @@
 ---
-title: "Introducing My Blog"
+title: "Introducing my Blog"
 date: 2025-05-26
 categories:
   - blog
