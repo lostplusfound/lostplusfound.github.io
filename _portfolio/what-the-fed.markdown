@@ -27,7 +27,7 @@ project:
 
 ---
 
-## 🧠 Overview
+## 📋 Overview
 
 **What The Fed?** is a prototype civic tech app built for my AP Government & Politics Civic Project. It’s also my first major **Flutter** application, and it explores how **AI** can empower citizens by making U.S. government activity more transparent and understandable.
 
