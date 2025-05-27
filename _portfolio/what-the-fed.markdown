@@ -69,7 +69,7 @@ Understanding government shouldn’t require a law degree. _What The Fed?_ helps
 ## 📂 License & Source
 
 This project is open-source under the MIT License.  
-View the code on GitHub: [lostplusfound/what-the-fed](https://github.com/lostplusfound/what-the-fed)
+View the code on [GitHub](https://github.com/lostplusfound/what-the-fed)
 
 ---
 
