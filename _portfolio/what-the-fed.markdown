@@ -17,6 +17,7 @@ author_profile: true
 read_time: true
 related: true
 share: true
+toc: true
 project:
   type: "Flutter App"
   link: https://whatthefed.web.app
