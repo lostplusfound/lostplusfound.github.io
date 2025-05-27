@@ -1,5 +1,5 @@
 ---
-title: "My First Blog Post"
+title: "Introducing My Blog"
 date: 2025-05-26
 categories:
   - blog
@@ -7,7 +7,7 @@ tags:
   - jekyll
   - minimal-mistakes
   - portfolio
-excerpt: "Welcome to my personal page — a space where I explore the potential for technology to uplift others, share the lessons I learn, and build in the open."
+excerpt: "Welcome to my personal page — a space where I experiment with technology to create change, share the lessons I learn, and build in the open."
 author_profile: true
 read_time: true
 show_date: true
