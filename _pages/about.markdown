@@ -15,7 +15,7 @@ I believe in building technology that **empowers people**, and having fun and le
 
 ### 🧰 What I Work With
 
-- 🐦 **Flutter** — for building beautiful, cross-platform experiences.
+- 📱 **Flutter** — for building beautiful, cross-platform experiences.
 - ⚙️ **C / C++** — for embedded systems and microcontroller projects (like Arduino).
 - ☕ **Java** — my go-to language thanks to its workhorse, reliable nature.
 
