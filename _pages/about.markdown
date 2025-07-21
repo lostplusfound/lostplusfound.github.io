@@ -7,26 +7,24 @@ classes: wide
 author_profile: false
 ---
 
-👋 Hi, I'm **Stephen** — a developer passionate about civic engagement, digital privacy, and tech for social good.
-
-I believe in building technology that **empowers people**, and having fun and learning in the process.
+👋 Hi, I'm **Stephen** — I believe in building technology that **empowers people**, and having fun and learning in the process.
 
 ---
 
 ### 🧰 What I Work With
 
+- ☕ **Java** — my go-to language thanks to its workhorse, reliable nature.
 - 📱 **Flutter** — for building beautiful, cross-platform experiences.
 - ⚙️ **C / C++** — for embedded systems and microcontroller projects (like Arduino).
-- ☕ **Java** — my go-to language thanks to its workhorse, reliable nature.
 
 ---
 
 ### 💡 Interests
 
+- AI and machine learning
 - Civic tech
 - Digital rights & online privacy
 - Open-source software
-- AI and machine learning
 
 ---
 

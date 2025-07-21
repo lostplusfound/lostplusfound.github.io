@@ -16,7 +16,7 @@ toc: true
 
 ## Introduction
 
-👋 Hi there! I’m **Stephen**, a developer focused on civic engagement, digital privacy, and tech for social good. I believe in building tools that empower others — and in having fun while doing it.
+👋 Hi there! I’m **Stephen**, a developer focused on building tools that empower others and create change — and in having fun while doing it.
 
 On this blog, you’ll find a mix of things: thoughts on technology, updates on projects I’m working on, and occasional deep dives into my latest interests.
 

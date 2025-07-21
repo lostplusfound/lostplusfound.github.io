@@ -9,7 +9,7 @@ header:
   overlay_image: /assets/images/landing-header.jpg
   cta_label: "Visit my GitHub"
   cta_url: "https://github.com/lostplusfound"
-excerpt: "Hi, I'm Stephen — a developer passionate about civic engagement, digital privacy, and tech for social good. Here, I share what I’m building, learning, and exploring. Check out my latest blog posts below, or explore my full portfolio and learn more about me above."
+excerpt: "Hi, I'm Stephen. Here, I share what I’m building, learning, and exploring. Check out my latest blog posts below, or explore my full portfolio and learn more about me above."
 ---
 
 {% for post in site.posts %}
