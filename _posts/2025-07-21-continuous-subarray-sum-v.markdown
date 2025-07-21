@@ -8,7 +8,7 @@ tags:
   - two-pointers
   - array
   - dynamic-programming
-excerpt: "Welcome to my personal page — a space where I experiment with technology to create change, share the lessons I learn, and build in the open."
+excerpt: "This challenging Leetcode problem asks you to identify and sum the values of all good subarrays within a given array – sequences where consecutive elements either increment or decrement by 1. We'll explore both a brute-force approach and an optimized solution, showcasing how intuition and dynamic programming can lead to significant performance improvements."
 author_profile: true
 read_time: true
 show_date: true
@@ -103,7 +103,7 @@ public class Solution {
 
 ### Optimized Approach (O(N))
 
-To significantly improve performance, we can avoid finding and summing all possible subarrays. The core idea is that if a subarray `arr` is good, then *any* subarray formed from it will also be good. In the brute force approach, we need to find the values of all subarrays of `arr`. This approach is inefficient, since the number of subarrays that can be formed from `arr` is on the scale of O(N<sup>2</sup>). An optimization can be made by instead iterating through each element of the `arr` and finding the number of subarrays that contain that element, which can be done in constant time. If we know the number of occurrences of each element, then we can find the sum of the values of all subarrays of `arr` by summing each element multiplied by the number of its occurrences. This optimization allows finding the value of `arr` and its subarrays in O(N) time.
+To significantly improve performance, we can avoid finding and summing all possible subarrays. The core idea is that if a subarray `arr` is good, then *any* subarray formed from `arr` will also be good. In the brute force approach, we need to find the values of all subarrays of `arr`. This approach is inefficient, since the number of subarrays that can be formed from `arr` is on the scale of O(N<sup>2</sup>). An optimization can be made by instead iterating through each element of the `arr` and finding the number of subarrays that contain that element, which can be done in constant time. If we know the number of occurrences of each element, then we can find the sum of the values of all subarrays of `arr` by summing each element multiplied by the number of its occurrences. This optimization allows finding the value of `arr` and its subarrays in O(N) time.
 
 **Formula:**
 
