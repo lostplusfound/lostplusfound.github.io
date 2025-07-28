@@ -8,13 +8,13 @@ tags:
   - two-pointers
   - array
   - dynamic-programming
-excerpt: "This challenging Leetcode problem asks you to identify and sum the values of all good subarrays within a given array – sequences where consecutive elements either increment or decrement by 1. We'll explore both a brute-force approach and an optimized solution, showcasing how intuition and dynamic programming can lead to significant performance improvements."
+excerpt: "Given a non-negative integer array `nums`, we need to find the sum of the values of all good subarrays. A good subarray is defined as a consecutive subarray of length at least 1 that satisfies one of the following conditions, elements are incremented or decremented by 1. We explore two approaches, a brute-force approach and an optimized approach that runs in O(N) time."
 author_profile: true
 read_time: true
 show_date: true
 toc: true
 ---
-### Continuous Subarray Sum V
+### Problem: Continuous Subarray Sum V
 
 **Description:**
 
@@ -67,11 +67,13 @@ The sum of the values of all good subarrays is:
 2 + 4 + 6 = 12
 ```
 
+Let's explore two approaches to solve this problem: a brute-force approach and an optimized approach.
+
 ---
 
 ### Brute-Force Approach (O(N<sup>2</sup>))
 
-A straightforward approach is to use two pointers to find all subarrays that meet the criteria of a good subarray, and then summing all of their values. This involves nested loops, leading to a time complexity of O(N<sup>2</sup>). As all subarrays of length 1 are good, this case will be handled separately by summing all elements of `nums`. While this works for smaller arrays, it will time out for larger inputs. 
+A straightforward approach is to use two pointers to find all subarrays that meet the criteria of a good subarray, and then summing all of their values. This involves nested loops, leading to a time complexity of O(N²). All subarrays of length 1 are good, so we handle this case by summing all elements of `nums`. While this works for smaller arrays, it will time out for larger inputs. 
 
 ```java
 public class Solution {
@@ -103,23 +105,25 @@ public class Solution {
 
 ### Optimized Approach (O(N))
 
-To significantly improve performance, we can avoid finding and summing all possible subarrays. The core idea is that if a subarray `arr` is good, then *any* subarray formed from `arr` will also be good. In the brute force approach, we need to find the values of all subarrays of `arr`. This approach is inefficient, since the number of subarrays that can be formed from `arr` is on the scale of O(N<sup>2</sup>). An optimization can be made by instead iterating through each element of the `arr` and finding the number of subarrays that contain that element, which can be done in constant time. If we know the number of occurrences of each element, then we can find the sum of the values of all subarrays of `arr` by summing each element multiplied by the number of its occurrences. This optimization allows finding the value of `arr` and its subarrays in O(N) time.
+To improve performance, we avoid finding and summing all possible subarrays. The key insight is that if a subarray `arr` is good, then *any* subarray formed from `arr` will also be good. Instead of finding the values of all subarrays of `arr`, we iterate through each element of `arr` and find the number of subarrays that contain that element, which can be done in constant time.
 
 **Formula:**
 
 In an array `arr`, the number of times an element occurs in its subarrays can be calculated by summing three cases:
 
-- **Element at start:** If `arr[i]` is the starting point of a potential subarray, then the subarray can end at any point following the element. This gives us `nums.length - i - 1` possible end points.
+1. **Element at start:** If `arr[i]` is the starting point of a potential subarray, then the subarray can end at any point following the element. This gives us `arr.length - i - 1` possible end points.
 
-- **Element at end:** Conversely, if `arr[i]` is the ending point of a potential subarray, then the subarray must be start at any element preceding it.  This provides `i` possible start points.
+2. **Element at end:** If `arr[i]` is the ending point of a potential subarray, then the subarray must start at any element preceding it. This provides `i` possible start points.
 
-- **Element in between** For elements appearing *between* the start and end, we consider all pairs of starting and ending positions. Again, there are `i` possible starting points and `arr.length - i - 1` possible end points. Since we are *pairing* start and end points, we will multiply, so the number of occurrences for an element in this middle position is `i * (arr.length - i - 1)`.
+3. **Element in between:** For elements appearing between the start and end, we consider all pairs of starting and ending positions. There are `i` possible starting points and `arr.length - i - 1` possible end points. Since we are pairing start and end points, the number of occurrences for an element in this middle position is `i * (arr.length - i - 1)`.
 
-To get the total number of occurrences for each element across all possible subarrays, we sum the three cases: `numOccurrences = (arr.length - i - 1) + (i) + (i * (arr.length - i - 1))`, which simplifies to `arr.length - 1 + i * (arr.length - i - 1)`.
+The total number of occurrences for each element across all possible subarrays is: `arr.length - 1 + i * (arr.length - i - 1)`.
 
 **Algorithm:**
 
-To make use of our optimization, we find the longest good subarrays in `nums`, and store them in a 2-dimensional list. For each good subarray `arr` in this list, we can find the sum of itself and all of its subarrays by iterating through each of its elements. The amount each element contributes to the sum will be itself multiplied by its occurrences, so `contribution = arr[i] * (arr.length - 1 + i * (arr.length - i - 1))`.
+**Algorithm:**
+
+To make use of our optimization, we find the longest good subarrays in `nums`, and store them in a 2-dimensional list. For each good subarray `arr` in this list, we calculate the sum of itself and all of its subarrays by iterating through each of its elements. The contribution of each element to the sum is determined by multiplying the element by its occurrences, which is calculated using the formula: `contribution = arr[i] * (arr.length - 1 + i * (arr.length - i - 1))`.
 
 ### Final Solution
 
@@ -183,4 +187,4 @@ public class Solution {
 
 **Time Complexity:**
 
-O(N), where N is the length of `nums`. Finding the lognest good subarrays uses two pointers which iterate through the array once. This process must be done twice, once for increasing good subarrays, and once for decreasing good subarrays. The calculation of occurrences for each element takes constant time. In the worst case, all of the elements in `nums` are in a good subarray, requiring N calculations.
+O(N), where N is the length of nums. Finding the longest good subarrays uses two pointers which iterate through the array once. This process must be done twice, once for increasing good subarrays, and once for decreasing good subarrays. The calculation of occurrences for each element takes constant time. In the worst case, all of the elements in nums are in a good subarray, requiring N calculations.
